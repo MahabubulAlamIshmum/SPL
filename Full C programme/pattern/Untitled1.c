@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n, k=0;
+    printf("Enter N for this pattern: ");
+    scanf("%d",&n);
+
+    for(int i=0; i<n; i++)
+     {
+        for(int j=i+1; j<n; j++)
+            printf(" ");
+        for(int j=0; j<=i; j++)
+          {
+            printf("%d",k=k+1);
+            if(k==n)
+                (k=0);
+          }
+        printf("\n");
+    }
+return 0;
+}
+
+/*  1
+   23
+  451
+ 2345
+12345  */
